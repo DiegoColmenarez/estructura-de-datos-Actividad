@@ -1,5 +1,6 @@
 package org.exercise7;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,4 +20,13 @@ public class SalesAnalytic {
         }
         return bestSellersList;
     }
+
+    public BigDecimal getTotal(List<SalesLine> salesLine) {
+        BigDecimal total = BigDecimal.ZERO;
+        for (SalesLine sales : salesLine) {
+            total = total.add(sales.getLineTotal());
+        }
+        return total;
+    }
+
 }
