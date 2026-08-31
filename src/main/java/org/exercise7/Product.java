@@ -1,7 +1,5 @@
 package org.exercise7;
 
-import java.math.BigDecimal;
-
 public class Product {
     private String name;
     private final BigDecimal price;
@@ -18,4 +16,5 @@ public class Product {
     public String getName() {
         return name;
     }
+
 }
