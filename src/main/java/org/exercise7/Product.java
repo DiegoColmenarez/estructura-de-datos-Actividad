@@ -14,4 +14,8 @@ public class Product {
     public BigDecimal getPrice() {
         return price;
     }
+
+    public String getName() {
+        return name;
+    }
 }
