@@ -9,5 +9,9 @@ public class Main {
         };
 
         Student.print(students);
+
+        students[1] = new Student(students[1].name(), students[1].age(), 4.6F);
+
+        Student.print(students);
     }
 }
