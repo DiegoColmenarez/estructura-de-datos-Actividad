@@ -6,9 +6,9 @@ public class Student
 
     public Student(string name, int age, double average)
     {
-    this.name = name;
-    this.age = age;
-    this.average = average;
+        this.name = name;
+        this.age = age;
+        this.average = average;
     }
     public void ShowInfo()
     {

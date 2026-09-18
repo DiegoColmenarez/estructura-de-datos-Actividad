@@ -21,4 +21,4 @@ for e in students:
 students[1].average = 4.6
 
 print("\n--- Después de modificar a Juan ---")
-print(f"{students[1].nombre} | Nuevo Promedio: {students[1].promedio}")
+print(f"{students[1].name} | Nuevo Promedio: {students[1].average}")
