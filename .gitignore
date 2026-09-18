@@ -37,3 +37,14 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+# Carpetas de compilación de .NET
+bin/
+obj/
+
+# Archivo de proyecto (ignorado por solicitud)
+*.csproj
+
+# Configuraciones locales de entornos (VS Code, IntelliJ)
+.vscode/
+.idea/
