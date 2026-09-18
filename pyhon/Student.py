@@ -1,24 +1,24 @@
 from dataclasses import dataclass
 
 @dataclass
-class Estudiante:
-    nombre: str
-    edad: int
-    promedio: float
+class Student:
+    name: str
+    age: int
+    average: float
 
-estudiantes = [
-    Estudiante("Ana", 20, 4.2),
-    Estudiante("Juan", 22, 3.8),
-    Estudiante("Carlos", 21, 4.5)
+students = [
+    Student("Ana", 20, 4.2),
+    Student("Juan", 22, 3.8),
+    Student("Carlos", 21, 4.5)
 ]
 
 
 print("--- Datos Iniciales ---")
-for e in estudiantes:
-    print(f"{e.nombre} | Edad: {e.edad} | Promedio: {e.promedio}")
+for e in students:
+    print(f"{e.name} | Age: {e.age} | Average: {e.average}")
 
 
-estudiantes[1].promedio = 4.6
+students[1].average = 4.6
 
 print("\n--- Después de modificar a Juan ---")
-print(f"{estudiantes[1].nombre} | Nuevo Promedio: {estudiantes[1].promedio}")
+print(f"{students[1].nombre} | Nuevo Promedio: {students[1].promedio}")
