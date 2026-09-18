@@ -1,3 +1,5 @@
+namespace DefaultNamespace;
+
 public class Student
 {
     public string Name { get; set; }
@@ -6,17 +8,18 @@ public class Student
 
     public Student(string name, int age, double average)
     {
-        this.name = name;
-        this.age = age;
-        this.average = average;
+        this.Name = name;
+        this.Age = age;
+        this.Average = average;
     }
+    
     public void ShowInfo()
     {
-     Console.WriteLine($"{name} | Age: {age} | Average: {average}");
+        Console.WriteLine($"[Class]  {Name} | Age: {Age} | Average: {Average}");
     }
 
     public void SetAverage(double newAverage)
     {
-     this.average = newAverage;
+        this.Average = newAverage;
     }
 }
